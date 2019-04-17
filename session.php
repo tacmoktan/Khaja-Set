@@ -5,7 +5,7 @@
     // echo "Session Created";
      header('location:session2.php');
  } else {
-     $_SESSION['name'] = "Subesh";
+     $_SESSION['name'] = "Tashi";
      echo "Session Created // Logged in";
      
  }
