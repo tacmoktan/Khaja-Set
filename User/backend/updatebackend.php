@@ -16,6 +16,10 @@
            // echo "data updated";
             header('location:../index.php');
         }
+/*        else{
+           // echo "data update fail";
+            header('location:../update.php');
+        }*/
         
     }
     
