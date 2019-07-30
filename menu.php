@@ -1,3 +1,4 @@
+<?php include('backend/check_session.php'); ?>
 <?php include('header.php'); ?>
     <!--BODY OPEN-->
   <div class="container"> 

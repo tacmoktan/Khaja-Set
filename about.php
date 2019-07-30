@@ -1,7 +1,8 @@
+<?php include('backend/check_session.php'); ?>
 <?php include('header.php'); ?>
 <!--BODY OPEN-->
 <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron" id="about">
         <h1 style="color: #fb2828;text-decoration:underline;">Khaja Set</h1>
         <p> Khaja Set is the best online food delivering portal. </p>
 
