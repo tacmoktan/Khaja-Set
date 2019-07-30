@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2019 at 09:59 AM
+-- Generation Time: Jul 30, 2019 at 02:24 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -29,22 +29,23 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `addorder` (
-  `Id` int(11) NOT NULL,
-  `Name` varchar(20) NOT NULL,
-  `Address` varchar(20) NOT NULL,
-  `Phone` decimal(11,0) NOT NULL,
-  `Item` varchar(20) NOT NULL,
-  `Quantity` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `address` varchar(50) NOT NULL,
+  `phone` bigint(11) NOT NULL,
+  `item` varchar(50) NOT NULL,
+  `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `addorder`
 --
 
-INSERT INTO `addorder` (`Id`, `Name`, `Address`, `Phone`, `Item`, `Quantity`) VALUES
-(1, 'Aslam Bhai', 'Dubai', '9812345678', 'Mo:mo', 4),
-(2, 'Yadav Sherpa', 'Ratnapark', '9883245632', 'Maasuchiura', 1),
-(5, 'Ramlal Pandit', 'Ayodhya', '9823435323', 'Sukuti', 5);
+INSERT INTO `addorder` (`id`, `name`, `email`, `address`, `phone`, `item`, `quantity`) VALUES
+(1, 'Tashi Lama', 'tashimoktan@gmail.com', 'Boudha', 9847483647, 'Mo:mo', 5),
+(3, 'Tsering Lama', 'tseringlama@gmail.com', 'Bhaktapur', 9813224655, 'Newari Snack', 2),
+(4, 'Tashi Lama', 'tashilama@gmail.com', 'Lalitpur', 9865432165, 'Thakali', 3);
 
 -- --------------------------------------------------------
 
@@ -104,7 +105,7 @@ INSERT INTO `teamkhajaset` (`user_id`, `user_name`, `user_email`, `user_password
 -- Indexes for table `addorder`
 --
 ALTER TABLE `addorder`
-  ADD PRIMARY KEY (`Id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `foodmenu`
@@ -128,7 +129,7 @@ ALTER TABLE `teamkhajaset`
 -- AUTO_INCREMENT for table `addorder`
 --
 ALTER TABLE `addorder`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `foodmenu`
