@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-   <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- jQuery library -->
@@ -22,17 +22,33 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 <body>
-<!--NAV OPEN-->
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <!--NAV OPEN-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="col-sm-9">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.php" > ORDER TABLE</a>
-                 </div>
-                 <div class="">
+                </div>
+                <div class="navbar-header">
                     <ul class="nav navbar-nav">
-                    <li><a href="addorder.php">Add Order</a></li>
+                        <li><a href="addorder.php">Add Order</a></li>
                     </ul>
-                 </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <form action="../backend/logoutbackend.php">
+                <span class="glyphicon glyphicon-user"></span> 
+                <?php
+                session_start();
+                echo  $_SESSION['name']
+                ?>
+                <button type="submit" class="btn btn-default" style="margin-top:4px;">
+                    <span style="font-family:serif;font-weight: bold; text-decoration: none">Logout</span>
+                </button>
+            </form>
+        </div>
+
     </div>
- </nav>   
+</nav>   
 <!--NAV CLOSE-->
