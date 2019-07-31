@@ -16,7 +16,11 @@
 
 ## Screenshots
 ### 1. FrontPage
-![Frontpage](Screenshots/frontpage.jpg)
+* Desktop View
+![Desktop View](Screenshots/desktopview.jpg)
+
+* Mobile View  
+![Mobile View](Screenshots/mobileview.jpg)
 
 ### 2. Registration
 ![Registration](Screenshots/registration.jpg)
