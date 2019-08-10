@@ -6,6 +6,7 @@
 * CSS 3
 * Bootstrap 4
 * PHP
+* MySql
 
 ## Features 
 * Dynamic
